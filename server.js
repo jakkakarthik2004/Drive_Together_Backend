@@ -203,6 +203,9 @@ const sendBookingEmailToUser = async (bookedCar, userEmail, selectedSeats, drive
     }
 }
 
+app.get('/helloWorld', (req, res) => {
+    res.status(200).send("Hello World");
+})
 
 app.post('/register', async(req, res) => {
     const { Name, email, password, confirmPassword, phone } = req.body
