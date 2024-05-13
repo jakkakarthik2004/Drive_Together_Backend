@@ -8,7 +8,7 @@ app.use(cors())
 app.use(exp.json())
 
 
-const db = "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.4"
+const db = "mongodb+srv://jsunnybabu:SunnyJakka@drivetogether.kmuu5n1.mongodb.net/"
 mongoose.connect(db).then(()=> {
     console.log("DB connected")
 }).catch(err => {
